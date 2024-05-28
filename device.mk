@@ -464,6 +464,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     firmware/xiaomi/surya \
     vendor/qcom/opensource/usb/etc \
+    bootable/deprecated-ota \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/qcom-caf/common/libqti-perfd-client \
