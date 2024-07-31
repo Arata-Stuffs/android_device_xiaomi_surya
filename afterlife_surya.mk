@@ -11,30 +11,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/everest/config/common_full_phone.mk)
+# Inherit some common AfterlifeOS stuff.
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
-# Boot animation resolution.
+# AfterLife flags
+AFTERLIFE_MAINTAINER := Skyy丨アラタ
+
+# Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Maintainer
-EVEREST_MAINTAINER := Skyy丨HinohArata
-EVEREST_BUILD_TYPE := OFFICIAL
+# Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Extra Stuffs
-TARGET_SUPPORTS_BLUR := true
-TARGET_BUILD_INNERTUNE := true
-WITH_GAPPS := true
-TARGET_INCLUDE_PIXEL_LAUNCHER := false
-
-# Device Manufacture
-PRODUCT_NAME := everest_surya
+PRODUCT_NAME := afterlife_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := M2007J20CG
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-USE_GMS := true
 
 BUILD_FINGERPRINT := POCO/surya_global/surya:12/RKQ1.211019.001/V14.0.2.0.SJGMIXM:user/release-keys
 
