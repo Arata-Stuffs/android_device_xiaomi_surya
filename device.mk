@@ -36,6 +36,9 @@ $(call inherit-product-if-exists, device/xiaomi/surya/parts/parts.mk)
 # GalleryGo
 $(call inherit-product, device/xiaomi/surya/Gallery/config.mk)
 
+# Kernel vintf
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
+
 # Signing
 -include vendor/private-keys/keys/keys.mk
 
