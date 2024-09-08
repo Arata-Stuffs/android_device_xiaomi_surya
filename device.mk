@@ -124,6 +124,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
+    android.hardware.sensors@1.0-service \
     libdng_sdk.vendor
 
 PRODUCT_PACKAGES += \
@@ -138,7 +139,9 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libpiex_shim
+    libpiex_shim \
+    libpiex \
+    libpng.vendor
 
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.camera.perflock.enable=0
