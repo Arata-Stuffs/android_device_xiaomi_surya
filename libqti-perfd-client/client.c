@@ -12,6 +12,10 @@
 
 void perf_get_feedback() {}
 void perf_hint() {}
+int perf_hint_renew(int arg1, int arg2, const char *arg3, int arg4, int arg5, int arg6, int arg7[]) {
+    ALOGI("perf_hint_renew: %d, %d, %s, %d, %d, %d, %d", arg1, arg2, arg3, arg4, arg5, arg6, arg7[0]);
+    return 233;
+}
 int perf_lock_acq(int handle, int duration, int arg3[], int arg4) {
     ALOGI("perf_lock_acq: handle: %d, duration: %d, arg3[0]: %d, arg4: %d",
             handle, duration, arg3[0], arg4);
