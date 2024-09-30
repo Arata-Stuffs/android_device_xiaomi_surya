@@ -239,6 +239,9 @@ telephony.lteOnCdmaDevice=1
 # RCS
 persist.rcs.supported=1
 
+# Rounded Screenshot
+debug.screenshot_rounded_corners=true
+
 # WiFi
 wifi.aware.interface=wifi-aware0
 
