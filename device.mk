@@ -36,6 +36,9 @@ $(call inherit-product, firmware/xiaomi/surya/Android.mk)
 # XiaomiParts
 $(call inherit-product, device/xiaomi/surya/parts/parts.mk)
 
+# GalleryGO
+$(call inherit-product-if-exists, vendor/prebuilts/GalleryGO/config.mk)
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
