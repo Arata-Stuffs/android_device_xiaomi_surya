@@ -39,6 +39,9 @@ $(call inherit-product, device/xiaomi/surya/parts/parts.mk)
 # GalleryGO
 $(call inherit-product-if-exists, vendor/prebuilts/GalleryGO/config.mk)
 
+# Sign
+-include vendor/private-keys/keys/keys.mk
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
