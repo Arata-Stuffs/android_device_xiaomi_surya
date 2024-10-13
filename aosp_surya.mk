@@ -12,11 +12,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # GMS
 WITH_GMS := true
 
+# Boot Animaton
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Pixel Charger
+USE_PIXEL_CHARGER := true
+
+# The Pixel Project Flags
+CUSTOM_BUILD_TYPE := COMMUNITY
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_NOW_PLAYING := true
+
+# Device manufacturer
 PRODUCT_NAME := lineage_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
