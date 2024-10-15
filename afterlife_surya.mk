@@ -23,12 +23,14 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Face unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-
 # Offline Charging
 USE_PIXEL_CHARGING := true
 
 # disable/enable blur support, default is false
 TARGET_SUPPORTS_BLUR := true
+
+# AfterEcho
+TARGET_USE_ECHO := true
 
 # Device Manufacturer
 PRODUCT_NAME := afterlife_surya
