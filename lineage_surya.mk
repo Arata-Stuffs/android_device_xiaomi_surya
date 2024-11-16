@@ -19,11 +19,11 @@ WITH_GMS := true
 TARGET_ENABLE_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_HAS_UDFPS := false
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-ifeq ($(strip $(WITH_GMS)),true)
-    TARGET_DEFAULT_PIXEL_LAUNCHER := true
-endif
-RISING_MAINTAINER=Skyy丨アラタ
+EVO_BUILD_TYPE := COMMUNITY
+TARGET_SUPPORTS_QUICK_TAP := false
+USE_PIXEL_CHARGER := true
+TARGET_SUPPORTS_64_BIT_APPS := true
+BUILD_BCR := true
 
 # Device Manufacturer
 PRODUCT_NAME := lineage_surya
@@ -37,6 +37,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 BUILD_FINGERPRINT := POCO/surya_global/surya:12/RKQ1.211019.001/V14.0.2.0.SJGMIXM:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="surya_global-user 12 RKQ1.211019.001 V14.0.2.0.SJGMIXM release-keys" \
-    RISING_CHIPSET="Qualcomm Snapdragon 732G" \
-    RISING_MAINTAINER="Skyy丨アラタ"
+    PRIVATE_BUILD_DESC="surya_global-user 12 RKQ1.211019.001 V14.0.2.0.SJGMIXM release-keys"

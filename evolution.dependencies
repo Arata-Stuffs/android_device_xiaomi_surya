@@ -12,10 +12,16 @@
     "target_path" : "device/xiaomi/surya/parts"
   },
   {
-    "remote"      : "gitlab",
-    "repository"  : "HinohArata/temporary",
-    "branch"      : "krn",
+    "remote"      : "github",
+    "repository"  : "HinohArata/anonymous_kernel",
+    "branch"      : "4.14",
     "target_path" : "kernel/xiaomi/surya"
+  },
+  {
+    "remote"      : "github",
+    "repository"  : "HinohArata/keys",
+    "branch"      : "full",
+    "target_path" : "vendor/private-keys/keys"
   },
   {
     "remote"      : "github",
@@ -24,15 +30,15 @@
     "target_path" : "hardware/xiaomi"
   },
   {
-    "remote"      : "gitlab",
-    "repository"  : "HinohArata/temporary-v1",
-    "branch"      : "camv",
+    "remote"      : "github",
+    "repository"  : "HinohArata/vendor_xiaomi_surya-miuicamera",
+    "branch"      : "14-tes",
     "target_path" : "vendor/xiaomi/surya-miuicamera"
   },
   {
-    "remote"      : "gitlab",
-    "repository"  : "HinohArata/temporary-d1",
-    "branch"      : "camd",
+    "remote"      : "github",
+    "repository"  : "HinohArata/device_xiaomi_surya-miuicamera",
+    "branch"      : "14-tes",
     "target_path" : "device/xiaomi/surya-miuicamera"
   },
   {
