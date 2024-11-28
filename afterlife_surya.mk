@@ -32,6 +32,9 @@ TARGET_SUPPORTS_BLUR := true
 # AfterEcho
 TARGET_USE_ECHO := true
 
+# LawnIcons
+TARGET_PREBUILTS_LAWNICONS := true
+
 # Device Manufacturer
 PRODUCT_NAME := afterlife_surya
 PRODUCT_DEVICE := surya
