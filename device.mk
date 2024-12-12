@@ -375,6 +375,11 @@ PRODUCT_PACKAGES += \
     SuryaSettingsProvider \
     SuryaWifiResources
 
+ifeq ($(TARGET_SUPPORT_NOTCHKILLER),true)
+PRODUCT_PACKAGES += \
+    NotchBarKillerOverlay
+endif
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 

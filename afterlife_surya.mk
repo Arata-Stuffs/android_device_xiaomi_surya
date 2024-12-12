@@ -35,6 +35,9 @@ TARGET_USE_ECHO := true
 # LawnIcons
 TARGET_PREBUILTS_LAWNICONS := true
 
+# NotchBarKiller
+TARGET_SUPPORT_NOTCHKILLER := true
+
 # Device Manufacturer
 PRODUCT_NAME := afterlife_surya
 PRODUCT_DEVICE := surya
