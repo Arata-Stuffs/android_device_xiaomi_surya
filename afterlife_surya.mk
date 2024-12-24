@@ -38,6 +38,10 @@ TARGET_PREBUILTS_LAWNICONS := true
 # NotchBarKiller
 TARGET_SUPPORT_NOTCHKILLER := true
 
+# GApps
+AFTERLIFE_GAPPS := true
+USE_GMS := true
+
 # Device Manufacturer
 PRODUCT_NAME := afterlife_surya
 PRODUCT_DEVICE := surya
