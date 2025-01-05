@@ -465,6 +465,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     firmware/xiaomi/surya \
     vendor/qcom/opensource/usb/etc \
+    vendor/qcom/opensource/commonsys/display \
+    vendor/qcom/opensource/commonsys-intf/display \
     bootable/deprecated-ota \
     hardware/google/interfaces \
     hardware/google/pixel \
