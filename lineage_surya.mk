@@ -34,9 +34,8 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-BUILD_FINGERPRINT := POCO/surya_global/surya:12/RKQ1.211019.001/V14.0.2.0.SJGMIXM:user/release-keys
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="surya_global-user 12 RKQ1.211019.001 V14.0.2.0.SJGMIXM release-keys" \
-    RISING_CHIPSET="Qualcomm Snapdragon 732G" \
-    RISING_MAINTAINER="Skyy丨アラタ"
+    BuildFingerprint := POCO/surya_global/surya:12/RKQ1.211019.001/V14.0.2.0.SJGMIXM:user/release-keys \
+    BuildDesc="surya_global-user 12 RKQ1.211019.001 V14.0.2.0.SJGMIXM release-keys" \
+    RisingChipset="Qualcomm Snapdragon 732G" \
+    RisingMaintainer="Skyy丨アラタ"
