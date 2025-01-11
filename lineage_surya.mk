@@ -23,7 +23,7 @@ TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
 ifeq ($(strip $(WITH_GMS)),true)
     TARGET_DEFAULT_PIXEL_LAUNCHER := true
 endif
-RISING_MAINTAINER=Skyy丨アラタ
+RISING_MAINTAINER=xSkyy丨アラタ
 
 # Device Manufacturer
 PRODUCT_NAME := lineage_surya
@@ -38,4 +38,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint := POCO/surya_global/surya:12/RKQ1.211019.001/V14.0.2.0.SJGMIXM:user/release-keys \
     BuildDesc="surya_global-user 12 RKQ1.211019.001 V14.0.2.0.SJGMIXM release-keys" \
     RisingChipset="Qualcomm Snapdragon 732G" \
-    RisingMaintainer="Skyy丨アラタ"
+    RisingMaintainer="xSkyy丨アラタ"
