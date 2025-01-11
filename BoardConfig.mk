@@ -107,7 +107,7 @@ TARGET_KERNEL_CONFIG := surya_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
 +TARGET_KERNEL_CLANG_COMPILE := true
 KERNEL_CC := CC=clang
-TARGET_KERNEL_CLANG_VERSION := clang-r510928
+TARGET_KERNEL_CLANG_VERSION := clang-r536225
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/$(TARGET_KERNEL_CLANG_VERSION)
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom
