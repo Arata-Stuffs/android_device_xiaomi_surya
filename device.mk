@@ -141,7 +141,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpiex_shim \
     libpiex \
-    libpng.vendor
+    libpng.vendor \
+    libui_shim.vendor
 
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.camera.perflock.enable=0
