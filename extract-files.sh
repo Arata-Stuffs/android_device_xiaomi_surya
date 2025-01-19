@@ -66,11 +66,17 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
-    vendor/lib64/hw/fingerprint.goodix.default.so)
-        [ "$2" = "" ] && return 0
-        "${PATCHELF_0_17_2}" --set-soname "fingerprint.goodix.default.so" "${2}"
-        ;;
-        *)
+
+        vendor/lib64/mediadrm/libwvdrmengine.so|vendor/lib64/libwvhidl.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libcrypto_shim.so" "${2}" || "${PATCHELF}" --add-needed  "libcrypto_shim.so" "${2}"
+            ;;
+
+        vendor/lib64/hw/fingerprint.goodix.default.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --set-soname "fingerprint.goodix.default.so" "${2}"
+            ;;
+            *)
             return 1
             ;;
     esac
