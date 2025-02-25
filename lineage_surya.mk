@@ -16,14 +16,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # RisingOS
 WITH_GMS := true
-TARGET_ENABLE_BLUR := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_HAS_UDFPS := false
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-ifeq ($(strip $(WITH_GMS)),true)
-    TARGET_DEFAULT_PIXEL_LAUNCHER := true
-endif
-RISING_MAINTAINER=Skyy丨アラタ
+AXION_CAMERA_REAR_INFO := 64,13,2,2
+AXION_CAMERA_FRONT_INFO := 20
+AXION_MAINTAINER := Skyy丨アラタ
+AXION_PROCESSOR := Snapdragon_732G
 
 # Device Manufacturer
 PRODUCT_NAME := lineage_surya
@@ -36,6 +32,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=POCO/surya_global/surya:12/RKQ1.211019.001/V14.0.2.0.SJGMIXM:user/release-keys \
-    BuildDesc="surya_global-user 12 RKQ1.211019.001 V14.0.2.0.SJGMIXM release-keys" \
-    RISING_CHIPSET="Qualcomm Snapdragon 732G" \
-    RISING_MAINTAINER="Skyy丨アラタ"
+    BuildDesc="surya_global-user 12 RKQ1.211019.001 V14.0.2.0.SJGMIXM release-keys"
