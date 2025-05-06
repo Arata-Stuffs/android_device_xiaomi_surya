@@ -211,6 +211,10 @@ on post-fs-data
 
     setprop vold.post_fs_data_done 1
 
+    # Bypass charge
+    chown system system /sys/class/qcom-battery/input_suspend
+    chmod 0660 /sys/class/qcom-battery/input_suspend
+
 on property:sys.boot_completed=1
     chown media audio /sys/kernel/wdsp0/boot
 

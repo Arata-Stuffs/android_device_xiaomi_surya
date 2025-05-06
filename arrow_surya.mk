@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 $(call inherit-product, vendor/arrow/config/common.mk)
 
 # ArrowOS flags
-DEVICE_MAINTAINER := Skyy丨アラタ
+ARROW_MAINTAINER := Skyy丨アラタ
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -30,7 +30,7 @@ TARGET_SUPPORTS_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device Manufacture
-PRODUCT_NAME := afterlife_surya
+PRODUCT_NAME := arrow_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := M2007J20CG
